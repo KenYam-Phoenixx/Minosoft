@@ -1,6 +1,6 @@
 /*
  * Minosoft
- * Copyright (C) 2020-2023 Moritz Zwerger
+ * Copyright (C) 2020-2024 Moritz Zwerger
  *
  * This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
  *
@@ -16,9 +16,9 @@ package de.bixilon.minosoft.config.profile.manager
 import de.bixilon.kutil.concurrent.pool.DefaultThreadPool
 import de.bixilon.kutil.concurrent.worker.unconditional.UnconditionalWorker
 import de.bixilon.kutil.exception.ExceptionUtil.ignoreAll
+import de.bixilon.kutil.file.FileUtil.mkdirParent
 import de.bixilon.kutil.file.watcher.FileWatcherService
 import de.bixilon.kutil.latch.AbstractLatch
-import de.bixilon.minosoft.assets.util.FileUtil.mkdirParent
 import de.bixilon.minosoft.config.profile.profiles.account.AccountProfileManager
 import de.bixilon.minosoft.config.profile.profiles.audio.AudioProfileManager
 import de.bixilon.minosoft.config.profile.profiles.block.BlockProfileManager

@@ -234,15 +234,14 @@ class AudioPlayer(
             if (connection.wasConnected || connection.error != null) {
                 break
             }
-            queue.work()
+            queue.workBlocking(500L)
             calculateAvailableSources()
             while (!enabled) {
-                Thread.sleep(1L)
+                Thread.sleep(100L)
                 if (connection.wasConnected || connection.error != null) {
                     break
                 }
             }
-            Thread.sleep(1L)
         }
     }
 
